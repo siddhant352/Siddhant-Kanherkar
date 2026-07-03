@@ -1,0 +1,8 @@
+{
+  "name": "Dr. Maheshwari Kanherkar",
+  "description": "Professional medical website for Dr. Maheshwari Kanherkar, BAMS Intern and Online Ayurvedic Consultant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

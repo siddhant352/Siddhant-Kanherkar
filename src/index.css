@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ayur-green: #2d5a27;
+  --color-ayur-dark-green: #1b4332;
+  --color-ayur-cream: #fdfcf8;
+  --color-ayur-brown: #92400e;
+  --color-ayur-gold: #c5a059;
+  --color-ayur-dark-gold: #b8860b;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Georgia", "Times New Roman", ui-serif, serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--color-ayur-cream);
+  color: #1e293b;
+}
+
+/* Hide scrollbar for clean horizontal scrolls */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
