@@ -1,9 +1,9 @@
 import express from 'express';
 import cors from 'cors';
-import { requireAuth, AuthRequest } from './src/middleware/auth.ts';
-import { getOrCreateUser } from './src/db/users.ts';
-import { db } from './src/db/index.ts';
-import { appointments, contactMessages, reviews, users } from './src/db/schema.ts';
+import { requireAuth, AuthRequest } from './src/middleware/auth.js';
+import { getOrCreateUser } from './src/db/users.js';
+import { db } from './src/db/index.js';
+import { appointments, contactMessages, reviews, users } from './src/db/schema.js';
 import { eq, desc } from 'drizzle-orm';
 import { createClient } from '@supabase/supabase-js';
 
