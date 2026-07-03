@@ -2,7 +2,7 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || (typeof process !== 'undefined' && process.env.VITE_FIREBASE_API_KEY) || 'AIzaSyA...',
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || 'AIzaSyA...',
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || 'example.firebaseapp.com',
   projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || 'example-project',
   storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || 'example.appspot.com',
@@ -18,7 +18,7 @@ try {
     if (config.default) {
        Object.assign(firebaseConfig, config.default);
     }
-  });
+  }).catch(() => {}); // Catch missing file at runtime
 } catch (e) {
   // Ignore
 }
